@@ -17,18 +17,18 @@ if (isNaN(numberOne) || isNaN(numberTwo) || isNaN(numberThree)) {
     let mediumNumber;
     let smallestNumber;
 
-    if (numberOne > numberTwo && numberOne > numberThree) {
+    if (numberOne >= numberTwo && numberOne >= numberThree) {
         largestNumber = numberOne;
-        if (numberTwo > numberThree) {
+        if (numberTwo >= numberThree) {
             mediumNumber = numberTwo;
             smallestNumber = numberThree;
         } else {
             mediumNumber = numberThree;
             smallestNumber = numberTwo;
         }
-    } else if (numberTwo > numberOne && numberTwo > numberThree) {
+    } else if (numberTwo >= numberOne && numberTwo >= numberThree) {
         largestNumber = numberTwo;
-        if (numberOne > numberThree) {
+        if (numberOne >= numberThree) {
             mediumNumber = numberOne;
             smallestNumber = numberThree;
         } else {
@@ -37,7 +37,7 @@ if (isNaN(numberOne) || isNaN(numberTwo) || isNaN(numberThree)) {
         }
     } else {
         largestNumber = numberThree;
-        if (numberOne > numberTwo) {
+        if (numberOne >= numberTwo) {
             mediumNumber = numberOne;
             smallestNumber = numberTwo;
         } else {
